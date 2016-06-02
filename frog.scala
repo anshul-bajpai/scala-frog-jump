@@ -13,6 +13,9 @@
 //•	after the second jump, at position 10 + 30 + 30 = 70
 //•	after the third jump, at position 10 + 30 + 30 + 30 = 100
 
+//logic to solve this is: difference of target position and the starting position divided by fixed jump distance is the number of jumps, 
+//frog has to take in order to reach the target.
+
 class Jump() {
   def calculate (x:Int, y:Int, d:Int):Double = {
     val diff = y - x
